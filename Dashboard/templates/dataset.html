@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attrition Dataset</title>
+</head>
+<style>
+    h3 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    h5 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    table {font-family: monospace; width: 100%;}
+    th {
+    text-align: center;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    }
+</style>
+<body>
+    {% for table in tables %}
+            {{ table|safe }}
+    {% endfor %}
+</body>
+</html>

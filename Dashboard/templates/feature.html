@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Atrrition Prediction Trial</title>
+</head>
+<style>
+     h3 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    form {font-family: monospace;}
+    /* input {width: 100px;} */
+</style>
+<body>
+    <h3>Please fill in the data below:.</h3>
+    <br>
+
+    <form method="POST" action="http://127.0.0.1:5000/predict">
+        Age(years):
+        <br>
+        <input autofocus style="width:8em" type="number" required name="Age" 
+        step="1" min="18" max="60" placeholder="Input number"/>
+        <br>
+        <br>
+        Monthly Income (25000 - 105000):
+        <br>
+        <input autofocus style="width:8em" type="number" required name="MonthlyIncome" 
+        step="5000" min="25000" max="120000" placeholder="Input number"/>
+        <br>
+        <br>
+        Total Working Years:
+        <br>
+        <input autofocus style="width:8em" type="number" required name="TotalWorkingYears" 
+        step="1" min="1" max="40" placeholder="Input number"/>
+        <br>
+        <br>
+        Distance From Home in km:
+        <br>
+        <input autofocus style="width:8em" type="number" required name="DistanceFromHome" 
+        step="1" min="1" max="30" placeholder="Input number"/>
+        <br>
+        <br>
+        Years at Company:
+        <br>
+        <input autofocus style="width:8em" type="number" required name="YearsAtCompany" 
+        step="1" min="0" max="40" placeholder="Input number"/>
+        <br>
+        <br>
+        Percent Salary Hike (11 - 25):
+        <br>
+        <input autofocus style="width:8em" type="number" required name="PercentSalaryHike" 
+        step="1" min="11" max="25" placeholder="Input number"/>
+        <br>
+        <br>
+        Number of Companies Worked:
+        <br>
+        <input autofocus style="width:8em" type="number" required name="NumCompaniesWorked" 
+        step="1" min="1" max="8" placeholder="Input number"/>
+        <br>
+        <br>
+        Years with Current Manager:
+        <br>
+        <input autofocus style="width:8em" type="number" required name="YearsWithCurrManager" 
+        step="1" min="0" max="16" placeholder="Input number"/>
+        <br>
+        <br>
+        Environment Satisfaction (1-4):
+        <br>
+        <input autofocus style="width:8em" type="number" required name='EnvironmentSatisfaction' 
+        step="1" min="1" max="4" placeholder="Input number"/>
+        <br>
+        <br>
+        Job Satisfaction (1-4):
+        <br>
+        <input autofocus style="width:8em" type="number" required name="JobSatisfaction"
+        step="1" min="1" max="4" placeholder="Input number"/>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

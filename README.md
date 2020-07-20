@@ -6,6 +6,6 @@ The project was created as part of Job Connector Data Science and Machine Learni
 
 Dataset
 ----
-The datasets are taken from the following link: https://www.kaggle.com/vjchoudhary7/hr-analytics-case-study. 
+The datasets were taken from the following link: https://www.kaggle.com/vjchoudhary7/hr-analytics-case-study. 
 
-Only four datasets are used. 
+Only four datasets were used. 
